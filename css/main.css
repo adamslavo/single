@@ -1,0 +1,67 @@
+*, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(237, 237, 237);
+}
+
+h1, p, h2 {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+}
+/*
+
+font-family: 'Open Sans', sans-serif;
+
+*/
+
+.wrap-header {
+	background-image: url(../img/top-bg.png);
+	background-position: top center;
+	display: flex;
+	flex-direction: column;
+	z-index: -999;
+	border: 1px red solid;
+	text-align: center;
+}
+
+.logo {
+	border: 1px red solid;
+	margin-top: 3rem;
+}
+.logo img {
+	width: 100%;
+	max-width: 273px;
+}
+
+.header-text {
+	margin: 3rem;
+}
+
+.header-text h1 {
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+}
+
+.header-text p {
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+	padding: 0;
+	margin: 0;
+}
+
+.modal-header {
+	width: 335px;
+	max-width: 100%;
+	background-color: #fff;
+	text-align: center;
+}
+
+
+
