@@ -2,8 +2,15 @@
 	box-sizing: border-box;
 }
 
+html {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	background-color: rgb(237, 237, 237);
+	margin: 0;
+	padding: 0;
 }
 
 h1, p, h2 {
@@ -21,6 +28,7 @@ font-family: 'Open Sans', sans-serif;
 	background-position: top center;
 	z-index: -999;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .header-content {
@@ -216,6 +224,9 @@ form small {
 .pc {
 	display: flex;
 	margin: 3rem;
+	align-items: flex-start;
+	padding: 3rem;
+	margin-top: 8rem;
 }
 
 .pc img {
@@ -235,6 +246,7 @@ form small {
 	font-weight: 400;
 	font-size: 2rem;
 	text-align: left;
+	margin: 0;
 }
 
 .pc-desc {
@@ -244,6 +256,10 @@ form small {
 	padding-bottom: 4rem;
 }
 
+.pc-btn {
+	text-align: left;
+}
+
 .btn-download {
 	text-decoration: none;
 	border: 3px white solid;
@@ -251,9 +267,218 @@ form small {
 	color: #fff;
 	font-size: 2rem;
 	padding: 1rem 4rem;
-	border-radius: 15px;
+	border-radius: 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.footer-wrap {
+	background-image: url(../img/map.png);
+	background-position: top center;
+	z-index: -998;
+	background-repeat: no-repeat;
+	padding: 5rem 0 0 0;
+	background-size: cover;
+}
+
+.form {
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 100%;
+	max-width: 400px;
+	height: 400px;
+	padding: 5rem;
+	border-radius: 500px;
+	align-items: center;
+	margin: 0 auto;
+	border: 1px rgb(231, 231, 231) solid;
+}
+
+
+form {
+	display: flex;
+}
+
+form input {
+	border: 1px rgb(231, 231, 231) solid;
+	padding: 1rem;
+	width: 100%;
+	max-width: 300px;
+}
+
+.inp-name {
+	padding: 1rem;
+	height: 30px;
+}
+
+.inp-email {
+	margin: 1rem;
+	height: 30px;
+}
+
+.inp-message {
+	height: 80px;
+}
+
+.form-btn {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: none;
+	border-style: none;
+}
+.btn-svg{
+	margin-top: 1rem;
+	width: 60px;
+}
+
+.footer-bottom {
+	background-color: #43a06d;
+	height: 60px;
+	margin-top: 4rem;
+}
+
+.footer-bottom p {
+	margin: 0;
+	padding-top: 1rem;
+	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 }
 
 
 
+@media screen and (max-width: 795px) {
+	.start-main-section {
+		display: flex;
+		flex-direction: column;
+	}
+	.doc img {
+		width: 100%;
+		max-width: 100px;
+	}
+	.photo img {
+		width: 100%;
+		max-width: 100px;
+	}
+	.tablet {
+		margin: 5rem;
+	}
+	.tablet img {
+		width: 100%;
+		max-width: 150px;
+	}
+	.pc {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 1rem;
+		padding: 2rem;
+	}
+
+	.pc-img {
+		width: 100%;
+		max-width: 150px;
+		margin-bottom: 1rem;
+	}
+	.pc-header{
+		width: 100%;
+		max-width: 600px;
+		margin: 1rem;
+		padding: 0;
+	}
+	.pc-btn {
+		text-align: center;
+	}
+	.btn-download {
+		font-size: 1.5rem;
+	}
+}
+@media screen and (max-width: 425px) {
+	.start-main-section {
+		display: flex;
+		flex-direction: column;
+	}
+	.doc img {
+		width: 100%;
+		max-width: 100px;
+	}
+	.photo img {
+		width: 100%;
+		max-width: 100px;
+	}
+	.tablet {
+		margin: 3rem;
+	}
+	.tablet img {
+		width: 100%;
+		max-width: 150px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.logo {
+		width: 100%;
+		max-width: 200px;
+	}
+	.modal-header {
+		width: 100%;
+		max-width: 310px;
+	}
+	.doc {
+		display: flex;
+		flex-direction: column;
+	}
+	.photo {
+		display: flex;
+		flex-direction: column;
+	}
+	.form {
+		background-color: rgba(255, 255, 255, 0.8);
+		width: 100%;
+		max-width: 350px;
+		border-radius: 5px;
+		align-items: center;
+		margin: 0 auto;
+		padding: 0;
+		border: 1px rgb(231, 231, 231) solid;
+	}
+	.inp-name, .inp-email, .inp-message {
+		margin: 0;
+		padding: 0;
+	}
+	.inp-name {
+		margin-top: 2rem;
+		padding: 0.5rem;
+	}
+	.inp-email {
+		margin-top: 2rem;
+		padding: 0.5rem;
+	}
+	.inp-message {
+		margin-top: 2rem;
+		padding: 0.5rem;
+	}
+	.form-btn {
+		margin-top: 2rem;
+	}
+}
+@media screen and (max-width: 325px) {
+	.doc {
+		margin: 3rem 0 0 0;
+	}
+	.photo {
+		margin: 0;
+	}
+	.footer-bottom p{
+		font-size: 0.8rem;
+	}
+	.tablet{
+		margin: 0;
+		padding: 1rem;
+	}
+	.pc {
+		margin: 0;
+		padding: 1rem;
+	}
+	.pc-header {
+		margin: 0;
+	}
+	
+}
